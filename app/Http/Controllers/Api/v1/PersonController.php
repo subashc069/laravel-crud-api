@@ -22,7 +22,7 @@ class PersonController extends Controller
      */
     public function index(): PersonResourceCollection
     {
-        return new PersonResourceCollection(Person::paginate());
+        return new PersonResourceCollection(Person::all());
     }
 
     public function store(Request $request)

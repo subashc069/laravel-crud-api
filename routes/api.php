@@ -31,4 +31,9 @@ Route::prefix('v2')->group(function (){
         ->only('show');
 });
 
+Route::prefix('user')->group(function (){
+    Route::post('/login', 'Api\v1\LoginController@login');
+    Route::middleware('auth:api')->get('/all', 'Api\v1\User\UserController@index');
+});
+
 
