@@ -80,16 +80,18 @@ return [
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'url' => "postgres://aqhdgvgmtretpe:5ba75059a2809ae4e3cf8056ec897893ae5f9b08e265ccd1f6ea8c7346c38c36@ec2-54-86-57-171.compute-1.amazonaws.com:5432/d15g8p5t4qs07a",
+            'host' => "ec2-54-86-57-171.compute-1.amazonaws.com",
+            'port' => "5432",
+            'database' => "d15g8p5t4qs07a",
+            'username' => "aqhdgvgmtretpe",
+            'password' => "5432",
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
         ],
+
+        
 
     ],
 
